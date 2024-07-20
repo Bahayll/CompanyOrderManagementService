@@ -35,4 +35,4 @@
 12. Sipariş Silme
 
 ## Kullanılan Teknolojiler
-.NET Core 6 API, MSSQL, SwaggerUI, Entity Framework Code First, Repository Design Pattern, Onion Architecture
+.NET Core 6 API, MSSQL, SwaggerUI, Entity Framework Code First, Repository Design Pattern
