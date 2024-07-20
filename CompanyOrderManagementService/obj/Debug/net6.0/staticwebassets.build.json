@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "RT5zQez44QliwsEsOmTWtu0A6ZczH9/LIYVKeq5NNM0=",
+  "Source": "CompanyOrderManagementService",
+  "BasePath": "_content/CompanyOrderManagementService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
