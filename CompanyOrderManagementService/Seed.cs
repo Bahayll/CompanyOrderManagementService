@@ -17,10 +17,8 @@ namespace CompanyOrderManagementService
 
         public void SeedDbContext()
         {
-            // Veritabanında herhangi bir firma var mı kontrol et
             if (!_context.Companies.Any())
             {
-                // Eğer firma yoksa örnek firmaları ekleyelim
                 var companies = new List<Company>()
                 {
                     new Company { CompanyName = "Enoca A", ApprovalStatus = true, OrderPermissionStartTime = TimeSpan.FromHours(8), OrderPermissionEndTime = TimeSpan.FromHours(18) },
@@ -33,10 +31,8 @@ namespace CompanyOrderManagementService
                 _context.Companies.AddRange(companies);
             }
 
-            // Veritabanında herhangi bir ürün var mı kontrol et
             if (!_context.Products.Any())
             {
-                // Eğer ürün yoksa örnek ürünleri ekleyelim
                 var products = new List<Products>()
                 {
                     new Products { ProductName = "Product 1", Stock = 100, Price = 10.5m, CompanyName = "Enoca A" },
@@ -48,10 +44,8 @@ namespace CompanyOrderManagementService
                 _context.Products.AddRange(products);
             }
 
-            // Veritabanında herhangi bir sipariş var mı kontrol et
             if (!_context.Orders.Any())
             {
-                // Eğer sipariş yoksa örnek siparişleri ekleyelim
                 var orders = new List<Order>()
                 {
                     new Order { CompanyName = "Enoca A" , ProductName = "Product 1", PersonName = "Baha YOLAL", OrderDate = DateTime.UtcNow },
@@ -63,7 +57,6 @@ namespace CompanyOrderManagementService
                 _context.Orders.AddRange(orders);
             }
 
-            // Değişiklikleri veritabanına kaydet
             _context.SaveChanges();
         }
     }
